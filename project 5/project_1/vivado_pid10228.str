@@ -1,0 +1,310 @@
+/*
+
+Vivado v2014.4 (64-bit)
+SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+Process ID: 10228
+
+Current time: 	3/17/18 2:09:31 PM
+Time zone: 	India Standard Time (Asia/Calcutta)
+
+OS: Windows 8
+Version: 6.2
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1366x768
+Screen resolution (DPI): 96
+Available screens: 1
+
+Java version: 	1.8.0_05 64-bit
+Java home: 	C:/Xilinx/Vivado/2014.4/tps/win64/jre
+
+User name: 	Samyak Jain
+User directory: C:/Users/Samyak Jain/Desktop/project_1
+User country: 	IN
+User language: 	en
+User locale: 	en_IN
+Vivado preferences path: C:/Users/Samyak Jain/AppData/Roaming/Xilinx/Vivado/2014.4/vivado.ini
+Vivado layouts directory: C:/Users/Samyak Jain/AppData/Roaming/Xilinx/Vivado/2014.4/layouts/application
+
+GUI allocated memory:	178 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 448 MB
+
+*/
+
+// TclEventType: START_GUI
+// HColorUtils.generateUniqueColorPalette (num colors: 56) elapsed time: 0.9s
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// cm:N (ch:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {C:/Users/Samyak Jain/Desktop/project_1/project_1.xpr} 
+// [GUI Memory]: 27 MB (+25513kb) [00:00:07]
+// [Engine Memory]: 385 MB (+252312kb) [00:00:07]
+// Tcl Message: open_project {C:/Users/Samyak Jain/Desktop/project_1/project_1.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 43 MB (+17349kb) [00:00:08]
+// [Engine Memory]: 406 MB (+22355kb) [00:00:08]
+// [Engine Memory]: 432 MB (+27103kb) [00:00:09]
+// [Engine Memory]: 447 MB (+15773kb) [00:00:12]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2014.4/data/ip'. 
+// [GUI Memory]: 48 MB (+4721kb) [00:00:12]
+// [Engine Memory]: 448 MB (+991kb) [00:00:12]
+// HMemoryUtils.trashcanNow. Engine heap size: 458 MB. GUI used memory: 32 MB. Current time: 3/17/18 2:09:31 PM
+// [Engine Memory]: 459 MB (+11419kb) [00:00:14]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 48 MB (+568kb) [00:00:14]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 49 MB (+643kb) [00:00:14]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 49 MB (+598kb) [00:00:14]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 51 MB (+1232kb) [00:00:15]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 51 MB (+598kb) [00:00:15]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 52 MB (+629kb) [00:00:15]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 52 MB (+601kb) [00:00:15]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 54 MB (+1227kb) [00:00:15]
+// [GUI Memory]: 54 MB (+598kb) [00:00:15]
+// [GUI Memory]: 55 MB (+629kb) [00:00:15]
+// [GUI Memory]: 55 MB (+602kb) [00:00:15]
+// [GUI Memory]: 56 MB (+598kb) [00:00:15]
+// [GUI Memory]: 56 MB (+629kb) [00:00:15]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 57 MB (+598kb) [00:00:15]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 58 MB (+1228kb) [00:00:15]
+// [Engine Memory]: 461 MB (+2338kb) [00:00:15]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 59 MB (+598kb) [00:00:15]
+// [Engine Memory]: 462 MB (+778kb) [00:00:15]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 59 MB (+630kb) [00:00:15]
+// [Engine Memory]: 463 MB (+1294kb) [00:00:15]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 60 MB (+980kb) [00:00:15]
+// [Engine Memory]: 465 MB (+1806kb) [00:00:15]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 467 MB (+1769kb) [00:00:15]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 469 MB (+2736kb) [00:00:16]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 471 MB (+1265kb) [00:00:16]
+// [Engine Memory]: 471 MB (+557kb) [00:00:16]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: project_1; location: C:/Users/Samyak Jain/Desktop/project_1; part: xc7a35ticpg236-1L
+// Tcl Message: open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:11 . Memory (MB): peak = 724.492 ; gain = 158.742 
+dismissDialog("Open Project"); // cm:N (ch:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [Engine Memory]: 476 MB (+5177kb) [00:00:18]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 476 MB (+438kb) [00:00:18]
+// Tcl Message: update_compile_order -fileset sim_1 
+// [Engine Memory]: 479 MB (+2527kb) [00:00:20]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 25, true); // w:Y (v:I, ch:JFrame) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// [Engine Memory]: 480 MB (+1523kb) [00:00:21]
+// [Engine Memory]: 484 MB (+3399kb) [00:00:21]
+// Tcl Message: open_hw 
+// [Engine Memory]: 488 MB (+4435kb) [00:00:22]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Open Target]", 26, false); // w:Y (v:I, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_TARGET_WIZARD, "Open New Target..."); // Z:JMenuItem (ag:JPopupMenu, Popup:JWindow)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Run Command: PAResourceCommand.PACommandNames_OPEN_TARGET_WIZARD
+// ae:g (ch:JFrame): Open New Hardware Target: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, ae:g)
+// cm:N (ae:g):  Open Server : addNotify
+/*
+java.util.NoSuchElementException (See C:/Users/Samyak Jain/Desktop/project_1/vivado_pid10228.debug)
+*/
+/*
+java.util.NoSuchElementException (See C:/Users/Samyak Jain/Desktop/project_1/vivado_pid10228.debug)
+*/
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// cm:N (ae:g):  Open Target : addNotify
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Open Server"); // cm:N (ae:g)
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, ae:g)
+dismissDialog("Open Target"); // cm:N (ae:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, ae:g)
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// cm:N (ae:g):  Open Hardware Target : addNotify
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server -url localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183624793A] 
+// TclEventType: HW_TARGET_CHANGE
+// Tcl Message: set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210183624793A] 
+// TclEventType: HW_TARGET_CHANGE
+// [GUI Memory]: 67 MB (+7150kb) [00:00:32]
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183624793A 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:\main.bit} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {F:/debug_nets.ltx} [lindex [get_hw_devices] 0] 
+// Tcl Message: current_hw_device [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, ae:g)
+// 'o' command handler elapsed time: 7 seconds
+dismissDialog("Open Hardware Target"); // cm:N (ae:g)
+dismissDialog("Open New Hardware Target"); // ae:g (ch:JFrame)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xilinx_tcf/Digilent/210183624793A (1) ; Open", 1, "xilinx_tcf/Digilent/210183624793A (1)", 0, true); // f:au (JViewport:JComponent, ch:JFrame) - Node
+// [GUI Memory]: 70 MB (+2702kb) [00:00:36]
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (1) ; Programmed", 2, "xc7a35t_0 (1)", 0, true); // f:au (JViewport:JComponent, ch:JFrame) - Node
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (1) ; Programmed", 2, "xc7a35t_0 (1)", 0, true, false, false, false, true, false); // f:au (JViewport:JComponent, ch:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// aC:ac (ch:JFrame): Program Device: addNotify
+applyEnter(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, "F:/main.bit"); // an:JTextField (aO:JPanel, aC:ac)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, aC:ac)
+// cm:N (ch:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // aC:ac (ch:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {F:/debug_nets.ltx} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/main.bit} [lindex [get_hw_devices] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-32] Done pin status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // cm:N (ch:JFrame)
+// [Engine Memory]: 488 MB (+73kb) [00:00:43]
+// Elapsed time: 31 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, ch:JFrame)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// al:bE (ch:JFrame): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, al:bE)
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_SESSION_CLOSE
+// [Engine Memory]: 488 MB (+77kb) [00:01:14]
+// [Engine Memory]: 490 MB (+2609kb) [00:01:14]
+// [Engine Memory]: 492 MB (+1368kb) [00:01:14]
+// Tcl Message: close_hw 
+dismissDialog("Confirm Close"); // al:bE (ch:JFrame)
+// [Engine Memory]: 493 MB (+1253kb) [00:01:15]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main - Behavioral (main.vhd)]", 1, true); // u:k (I:JPanel, ch:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main - Behavioral (main.vhd)]", 1, true, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click - Node
+// [GUI Memory]: 72 MB (+2639kb) [00:01:17]
+// [Engine Memory]: 494 MB (+1097kb) [00:01:18]
+// [Engine Memory]: 495 MB (+1191kb) [00:01:22]
+// [Engine Memory]: 496 MB (+1208kb) [00:01:26]
+// Elapsed time: 20 seconds
+selectCodeEditor("main.vhd", 105, 260); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 497 MB (+1163kb) [00:01:40]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 24, false); // w:Y (v:I, ch:JFrame)
+// [Engine Memory]: 498 MB (+589kb) [00:01:42]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 49 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 20, false); // w:Y (v:I, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// cm:N (ch:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// cm:N (ch:JFrame):  Starting Design Runs : addNotify
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// [Engine Memory]: 500 MB (+2158kb) [00:02:32]
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 
+// Tcl Message: [Sat Mar 17 14:11:51 2018] Launched synth_1... Run output will be captured here: C:/Users/Samyak Jain/Desktop/project_1/project_1.runs/synth_1/runme.log [Sat Mar 17 14:11:51 2018] Launched impl_1... Run output will be captured here: C:/Users/Samyak Jain/Desktop/project_1/project_1.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // cm:N (ch:JFrame)
+// [Engine Memory]: 501 MB (+1105kb) [00:02:33]
+// HMemoryUtils.trashcanNow. Engine heap size: 502 MB. GUI used memory: 35 MB. Current time: 3/17/18 2:11:54 PM
+// [Engine Memory]: 502 MB (+1495kb) [00:02:38]
+// [Engine Memory]: 504 MB (+1687kb) [00:02:43]
+// TclEventType: RUN_COMPLETED
+// [Engine Memory]: 504 MB (+73kb) [00:03:27]
+// TclEventType: RUN_STEP_COMPLETED
+// [Engine Memory]: 510 MB (+5693kb) [00:04:09]
+// TclEventType: RUN_COMPLETED
+// Q:al (ch:JFrame): Implementation Completed: addNotify
+// Elapsed time: 129 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a:JRadioButton (JPanel:JComponent, Q:al)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, Q:al)
+dismissDialog("Implementation Completed"); // Q:al (ch:JFrame)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// cm:N (ch:JFrame):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// Tcl Message: [Sat Mar 17 14:14:02 2018] Launched impl_1... Run output will be captured here: C:/Users/Samyak Jain/Desktop/project_1/project_1.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // cm:N (ch:JFrame)
+// TclEventType: RUN_COMPLETED
+// Q:al (ch:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 51 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a:JRadioButton (JPanel:JComponent, Q:al)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, Q:al)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+dismissDialog("Bitstream Generation Completed"); // Q:al (ch:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h:k (JPanel:JComponent, ch:JFrame)
+selectMenu(PAResourceOtoP.ProgramDebugTab_OPEN_RECENTLY_OPENED_TARGET, "Recent Targets"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Open Target]", 26, false); // w:Y (v:I, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem((HResource) null, "localhost:3121,xilinx_tcf/Digilent/210183624793A,PARAM.FREQUENCY:15000000"); // Z:JMenuItem (ag:JPopupMenu, Popup:JWindow)
+// cm:N (ch:JFrame):  Open Hardware Target : addNotify
+// Tcl Message: connect_hw_server -url localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, cm:N)
+selectButton("RDIResource.ProgressDialog_ARE_YOU_SURE_YOU_WANT_TO_CANCEL_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, Q:JDialog)
+// Tcl Message: INFO: [Common 17-41] Interrupt caught. Command should exit soon. 

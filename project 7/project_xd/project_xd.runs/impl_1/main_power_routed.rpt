@@ -1,0 +1,245 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2014.4 (win64) Build 1071353 Tue Nov 18 18:29:27 MST 2014
+| Date             : Thu Apr 19 02:16:22 2018
+| Host             : DESKTOP-9DIE9P2 running 64-bit major release  (build 9200)
+| Command          : 
+| Design           : main
+| Device           : xc7a35ticpg236-1L
+| Design State     : Routed
+| Grade            : industrial
+| Process          : typical
+| Characterization : Advance
+----------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+-------+
+| Total On-Chip Power (W)  | 9.705 |
+| Dynamic (W)              | 9.602 |
+| Device Static (W)        | 0.103 |
+| Effective TJA (C/W)      | 5.0   |
+| Max Ambient (C)          | 51.5  |
+| Junction Temperature (C) | 73.5  |
+| Confidence Level         | Low   |
+| Setting File             | ---   |
+| Simulation Activity File | ---   |
+| Design Nets Matched      | NA    |
++--------------------------+-------+
+
+
+1.1 On-Chip Components
+----------------------
+
++----------------+-----------+----------+-----------+-----------------+
+| On-Chip        | Power (W) | Used     | Available | Utilization (%) |
++----------------+-----------+----------+-----------+-----------------+
+| Slice Logic    |     2.614 |    48117 |       --- |             --- |
+|   LUT as Logic |     2.427 |    20473 |     20800 |           98.42 |
+|   F7/F8 Muxes  |     0.145 |     9728 |     32600 |           29.84 |
+|   CARRY4       |     0.021 |      917 |      8150 |           11.25 |
+|   Register     |     0.015 |    15926 |     41600 |           38.28 |
+|   BUFG         |     0.005 |        2 |        32 |            6.25 |
+|   Others       |     0.000 |      214 |       --- |             --- |
+| Signals        |     4.202 |    27027 |       --- |             --- |
+| I/O            |     2.786 |       25 |       106 |           23.58 |
+| Static Power   |     0.103 |          |           |                 |
+| Total          |     9.705 |          |           |                 |
++----------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++-----------+-------------+-----------+-------------+------------+
+| Vccint    |       0.950 |     7.269 |       7.231 |      0.038 |
+| Vccaux    |       1.800 |     0.117 |       0.100 |      0.017 |
+| Vcco33    |       3.300 |     0.774 |       0.773 |      0.001 |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
+| Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       0.950 |     0.001 |       0.000 |      0.001 |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccadc    |       1.800 |     0.018 |       0.000 |      0.018 |
++-----------+-------------+-----------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                             |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                                    |
+| Clock nodes activity        | Low        | User specified less than 75% of clocks                 | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
+| Device models               | Medium     | Device models are not Production                       | Device models may change and in turn slightly affect accuracy                                                      |
+|                             |            |                                                        |                                                                                                                    |
+| Overall confidence level    | Low        |                                                        |                                                                                                                    |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 5.0                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 4.6                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++-------+--------+-----------------+
+| Clock | Domain | Constraint (ns) |
++-------+--------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++----------------+-----------+
+| Name           | Power (W) |
++----------------+-----------+
+| main           |     9.602 |
+|   compare0     |     0.010 |
+|   compare1     |     0.010 |
+|   compare10    |     0.010 |
+|   compare100   |     0.322 |
+|   compare11    |     0.057 |
+|   compare12    |     0.010 |
+|   compare13    |     0.009 |
+|   compare14    |     0.010 |
+|   compare15    |     0.050 |
+|   compare16    |     0.010 |
+|   compare17    |     0.010 |
+|   compare18    |     0.010 |
+|   compare19    |     0.210 |
+|   compare2     |     0.010 |
+|   compare20    |     0.010 |
+|   compare21    |     0.010 |
+|   compare22    |     0.010 |
+|   compare23    |     0.048 |
+|   compare24    |     0.010 |
+|   compare25    |     0.010 |
+|   compare26    |     0.010 |
+|   compare27    |     0.053 |
+|   compare28    |     0.010 |
+|   compare29    |     0.010 |
+|   compare3     |     0.136 |
+|   compare30    |     0.010 |
+|   compare31    |     0.045 |
+|   compare32    |     0.010 |
+|   compare33    |     0.010 |
+|   compare34    |     0.010 |
+|   compare35    |     0.262 |
+|   compare36    |     0.010 |
+|   compare37    |     0.010 |
+|   compare38    |     0.010 |
+|   compare39    |     0.046 |
+|   compare4     |     0.010 |
+|   compare40    |     0.010 |
+|   compare41    |     0.010 |
+|   compare42    |     0.009 |
+|   compare43    |     0.050 |
+|   compare44    |     0.010 |
+|   compare45    |     0.010 |
+|   compare46    |     0.010 |
+|   compare47    |     0.043 |
+|   compare48    |     0.010 |
+|   compare49    |     0.010 |
+|   compare5     |     0.010 |
+|   compare50    |     0.010 |
+|   compare51    |     0.385 |
+|   compare52    |     0.010 |
+|   compare53    |     0.010 |
+|   compare54    |     0.010 |
+|   compare55    |     0.050 |
+|   compare56    |     0.010 |
+|   compare57    |     0.010 |
+|   compare58    |     0.010 |
+|   compare59    |     0.055 |
+|   compare6     |     0.010 |
+|   compare60    |     0.010 |
+|   compare61    |     0.010 |
+|   compare62    |     0.010 |
+|   compare63    |     0.043 |
+|   compare64    |     0.010 |
+|   compare65    |     0.010 |
+|   compare66    |     0.010 |
+|   compare67    |     0.160 |
+|   compare68    |     0.010 |
+|   compare69    |     0.010 |
+|   compare7     |     0.045 |
+|   compare70    |     0.010 |
+|   compare71    |     0.048 |
+|   compare72    |     0.010 |
+|   compare73    |     0.010 |
+|   compare74    |     0.010 |
+|   compare75    |     0.051 |
+|   compare76    |     0.010 |
+|   compare77    |     0.010 |
+|   compare78    |     0.010 |
+|   compare79    |     0.048 |
+|   compare8     |     0.010 |
+|   compare80    |     0.010 |
+|   compare81    |     0.010 |
+|   compare82    |     0.010 |
+|   compare83    |     0.251 |
+|   compare84    |     0.010 |
+|   compare85    |     0.010 |
+|   compare86    |     0.010 |
+|   compare87    |     0.050 |
+|   compare88    |     0.010 |
+|   compare89    |     0.010 |
+|   compare9     |     0.010 |
+|   compare90    |     0.010 |
+|   compare91    |     0.052 |
+|   compare92    |     0.010 |
+|   compare93    |     0.010 |
+|   compare94    |     0.010 |
+|   compare95    |     0.043 |
+|   compare96    |     0.010 |
+|   compare97    |     0.010 |
+|   compare98    |     0.010 |
+|   compare99    |     0.069 |
+|   display_led  |     0.091 |
+|   receive_data |     1.303 |
++----------------+-----------+
+
+

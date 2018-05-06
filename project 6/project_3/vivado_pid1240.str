@@ -1,0 +1,991 @@
+/*
+
+Vivado v2014.4 (64-bit)
+SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+Process ID: 1240
+
+Current time: 	4/4/18 9:34:42 PM
+Time zone: 	India Standard Time (Asia/Calcutta)
+
+OS: Windows 8
+Version: 6.2
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1366x768
+Screen resolution (DPI): 96
+Available screens: 1
+
+Java version: 	1.8.0_05 64-bit
+Java home: 	C:/Xilinx/Vivado/2014.4/tps/win64/jre
+
+User name: 	Samyak Jain
+User directory: C:/Users/Samyak Jain/Desktop/project_3
+User country: 	IN
+User language: 	en
+User locale: 	en_IN
+Vivado preferences path: C:/Users/Samyak Jain/AppData/Roaming/Xilinx/Vivado/2014.4/vivado.ini
+Vivado layouts directory: C:/Users/Samyak Jain/AppData/Roaming/Xilinx/Vivado/2014.4/layouts/application
+
+GUI allocated memory:	120 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 374 MB
+
+*/
+
+// TclEventType: START_GUI
+// HColorUtils.generateUniqueColorPalette (num colors: 56) elapsed time: 1.7s
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 43 MB (+42368kb) [00:00:15]
+// [Engine Memory]: 358 MB (+224135kb) [00:00:15]
+// TclEventType: PROJECT_OPEN_DIALOG
+// cm:N (ch:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {C:/Users/Samyak Jain/Desktop/project_3/project_3.xpr} 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 388 MB. GUI used memory: 24 MB. Current time: 4/4/18 9:34:44 PM
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 394 MB (+37912kb) [00:00:20]
+// Tcl Message: open_project {C:/Users/Samyak Jain/Desktop/project_3/project_3.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// [Engine Memory]: 396 MB (+1785kb) [00:00:25]
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 46 MB (+3820kb) [00:00:29]
+// [Engine Memory]: 404 MB (+8421kb) [00:00:29]
+// [Engine Memory]: 422 MB (+19152kb) [00:00:31]
+// [Engine Memory]: 449 MB (+27611kb) [00:00:35]
+// [Engine Memory]: 452 MB (+3678kb) [00:00:36]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2014.4/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 453 MB. GUI used memory: 31 MB. Current time: 4/4/18 9:35:02 PM
+// [Engine Memory]: 453 MB (+958kb) [00:00:38]
+// [Engine Memory]: 454 MB (+704kb) [00:00:38]
+// [Engine Memory]: 454 MB (+376kb) [00:00:39]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 455 MB (+761kb) [00:00:39]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 455 MB (+647kb) [00:00:39]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 47 MB (+710kb) [00:00:39]
+// [Engine Memory]: 457 MB (+2080kb) [00:00:39]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 48 MB (+468kb) [00:00:40]
+// [Engine Memory]: 458 MB (+610kb) [00:00:40]
+// [GUI Memory]: 48 MB (+489kb) [00:00:40]
+// [GUI Memory]: 49 MB (+935kb) [00:00:40]
+// [GUI Memory]: 49 MB (+489kb) [00:00:40]
+// [GUI Memory]: 50 MB (+933kb) [00:00:40]
+// [GUI Memory]: 51 MB (+491kb) [00:00:40]
+// [GUI Memory]: 51 MB (+466kb) [00:00:40]
+// [Engine Memory]: 459 MB (+847kb) [00:00:40]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 52 MB (+1116kb) [00:00:40]
+// [Engine Memory]: 460 MB (+1376kb) [00:00:40]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 53 MB (+955kb) [00:00:40]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 460 MB (+253kb) [00:00:40]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 461 MB (+655kb) [00:00:40]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 462 MB (+1355kb) [00:00:41]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 462 MB (+4kb) [00:00:41]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 463 MB (+270kb) [00:00:42]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 463 MB (+610kb) [00:00:42]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 465 MB (+1695kb) [00:00:42]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 466 MB (+1327kb) [00:00:42]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: project_3; location: C:/Users/Samyak Jain/Desktop/project_3; part: xc7a35ticpg236-1L
+// Tcl Message: open_project: Time (s): cpu = 00:00:30 ; elapsed = 00:00:27 . Memory (MB): peak = 648.035 ; gain = 101.488 
+// [GUI Memory]: 55 MB (+1823kb) [00:00:43]
+dismissDialog("Open Project"); // cm:N (ch:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 472 MB (+5795kb) [00:00:45]
+// [GUI Memory]: 60 MB (+5625kb) [00:00:46]
+// [Engine Memory]: 476 MB (+4329kb) [00:00:46]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 25, true); // w:Y (v:I, ch:JFrame) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// [Engine Memory]: 476 MB (+319kb) [00:00:49]
+// [GUI Memory]: 61 MB (+271kb) [00:00:50]
+// Tcl Message: open_hw 
+// [GUI Memory]: 62 MB (+2056kb) [00:00:51]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Open Target]", 26, false); // w:Y (v:I, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem((HResource) null, "localhost:3121,xilinx_tcf/Digilent/210183624793A,PARAM.FREQUENCY:15000000"); // Z:JMenuItem (ag:JPopupMenu, Popup:JWindow)
+// cm:N (ch:JFrame):  Open Hardware Target : addNotify
+// Tcl Message: connect_hw_server -url localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2014.4   **** Build date : Nov 18 2014-18:09:44     ** Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.  INFO: hw_server application started INFO: Use Ctrl-C to exit hw_server application   ****** Xilinx hw_server v2014.4   **** Build date : Nov 18 2014-18:09:44     ** Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.  INFO: hw_server application started INFO: Use Ctrl-C to exit hw_server application   
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183624793A] 
+// TclEventType: HW_TARGET_CHANGE
+// Tcl Message: set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210183624793A] 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183624793A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:\main.bit} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {F:/debug_nets.ltx} [lindex [get_hw_devices] 0] 
+// Tcl Message: current_hw_device [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// [GUI Memory]: 70 MB (+7775kb) [00:00:58]
+dismissDialog("Open Hardware Target"); // cm:N (ch:JFrame)
+// PAPropertyPanels.initPanels (xc7a35t_0) elapsed time: 0.2s
+// Elapsed time: 19 seconds
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (1) ; Programmed", 2, "Programmed", 1, true); // f:au (JViewport:JComponent, ch:JFrame) - Node
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (1) ; Programmed", 2, "Programmed", 1, true); // f:au (JViewport:JComponent, ch:JFrame) - Node
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (1) ; Programmed", 2, "Programmed", 1, true, false, false, false, true, false); // f:au (JViewport:JComponent, ch:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// aC:ac (ch:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, aC:ac)
+// cm:N (ch:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // aC:ac (ch:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {F:/debug_nets.ltx} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/main.bit} [lindex [get_hw_devices] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-32] Done pin status: HIGH 
+// [GUI Memory]: 72 MB (+1861kb) [00:01:22]
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'p' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // cm:N (ch:JFrame)
+// Elapsed time: 66 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, ch:JFrame)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main - Behavioral (main.vhd)]", 1, true); // u:k (I:JPanel, ch:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main - Behavioral (main.vhd)]", 1, true, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click - Node
+// [GUI Memory]: 75 MB (+3382kb) [00:02:40]
+// [GUI Memory]: 76 MB (+878kb) [00:02:45]
+// [GUI Memory]: 77 MB (+978kb) [00:03:52]
+// [GUI Memory]: 77 MB (+60kb) [00:03:57]
+// [GUI Memory]: 81 MB (+4615kb) [00:03:59]
+// Elapsed time: 90 seconds
+selectCodeEditor("main.vhd", 116, 227); // bi:J (JPanel:JComponent, ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 4, true); // u:k (I:JPanel, ch:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 4, true, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, main.xdc]", 6, false); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, main.xdc]", 6, false, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 82 MB (+593kb) [00:04:24]
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 24, false); // w:Y (v:I, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// aR:ad (ch:JFrame): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a:JButton (JPanel:JComponent, aR:ad)
+// cm:N (ch:JFrame):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // aR:ad (ch:JFrame)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Save Constraints"); // cm:N (ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: reset_run synth_1 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RUN_LAUNCH
+// cm:N (ch:JFrame):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Apr 04 21:38:54 2018] Launched synth_1... Run output will be captured here: C:/Users/Samyak Jain/Desktop/project_3/project_3.runs/synth_1/runme.log [Wed Apr 04 21:38:54 2018] Launched impl_1... Run output will be captured here: C:/Users/Samyak Jain/Desktop/project_3/project_3.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // cm:N (ch:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 477 MB (+1437kb) [00:05:54]
+// Elapsed time: 104 seconds
+selectCodeEditor("main.xdc", 476, 206); // bi:J (JPanel:JComponent, ch:JFrame)
+// [GUI Memory]: 83 MB (+1314kb) [00:06:19]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "main.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// [GUI Memory]: 92 MB (+9886kb) [00:06:19]
+// [Engine Memory]: 478 MB (+385kb) [00:06:19]
+// [Engine Memory]: 480 MB (+2576kb) [00:06:21]
+// Elapsed time: 11 seconds
+selectCodeEditor("main.vhd", 81, 87); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("main.vhd", 110, 77); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("main.vhd", 108, 84); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 16 seconds
+selectCodeEditor("main.vhd", 109, 258); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 485 MB (+4988kb) [00:06:56]
+// [Engine Memory]: 485 MB (+8kb) [00:07:01]
+selectCodeEditor("main.vhd", 211, 292); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 486 MB (+618kb) [00:07:06]
+selectCodeEditor("main.vhd", 206, 130); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "main.vhd", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("main.vhd", 192, 177); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 489 MB (+3399kb) [00:07:19]
+selectCodeEditor("main.vhd", 267, 262); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 491 MB (+2768kb) [00:07:21]
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// [Engine Memory]: 501 MB (+9740kb) [00:08:16]
+// HMemoryUtils.trashcanNow. Engine heap size: 501 MB. GUI used memory: 38 MB. Current time: 4/4/18 9:42:45 PM
+// [Engine Memory]: 501 MB (+638kb) [00:08:21]
+// [Engine Memory]: 501 MB (+12kb) [00:08:26]
+// [Engine Memory]: 502 MB (+614kb) [00:08:46]
+// Elapsed time: 121 seconds
+selectCodeEditor("main.vhd", 250, 193); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: RUN_COMPLETED
+// [Engine Memory]: 502 MB (+106kb) [00:10:07]
+// Q:al (ch:JFrame): Bitstream Generation Completed: addNotify
+// [Engine Memory]: 502 MB (+229kb) [00:10:12]
+// Elapsed time: 51 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a:JRadioButton (JPanel:JComponent, Q:al)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, Q:al)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// TclEventType: HW_SESSION_OPEN
+// [Engine Memory]: 502 MB (+16kb) [00:10:14]
+// [Engine Memory]: 506 MB (+4079kb) [00:10:15]
+// Tcl Message: open_hw 
+// [Engine Memory]: 507 MB (+999kb) [00:10:15]
+// [Engine Memory]: 508 MB (+1073kb) [00:10:15]
+dismissDialog("Bitstream Generation Completed"); // Q:al (ch:JFrame)
+// [Engine Memory]: 511 MB (+2678kb) [00:10:17]
+// HMemoryUtils.trashcanNow. Engine heap size: 528 MB. GUI used memory: 64 MB. Current time: 4/4/18 9:45:50 PM
+// [Engine Memory]: 528 MB (+18165kb) [00:11:27]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 200 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Open Target]", 26, false); // w:Y (v:I, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem((HResource) null, "localhost:3121,xilinx_tcf/Digilent/210183624793A,PARAM.FREQUENCY:15000000"); // Z:JMenuItem (ag:JPopupMenu, Popup:JWindow)
+// cm:N (ch:JFrame):  Open Hardware Target : addNotify
+// Tcl Message: connect_hw_server -url localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2014.4   **** Build date : Nov 18 2014-18:09:44     ** Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.  INFO: hw_server application started INFO: Use Ctrl-C to exit hw_server application   ****** Xilinx hw_server v2014.4   **** Build date : Nov 18 2014-18:09:44     ** Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.  INFO: hw_server application started INFO: Use Ctrl-C to exit hw_server application   
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183624793A] 
+// Tcl Message: ERROR: [Labtoolstcl 44-199] No matching targets found on connected servers: localhost Resolution: If needed connect the desired target to a server and use command refresh_hw_server. Then rerun the get_hw_targets command. 
+// Tcl Message: ERROR: [Common 17-39] 'get_hw_targets' failed due to earlier errors. 
+// N:a (ch:JFrame): Critical Messages: addNotify
+dismissDialog("Open Hardware Target"); // cm:N (ch:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // i:a (JPanel:JComponent, N:a)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Open Target]", 26, false); // w:Y (v:I, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_TARGET_WIZARD, "Open New Target..."); // Z:JMenuItem (ag:JPopupMenu, Popup:JWindow)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Run Command: PAResourceCommand.PACommandNames_OPEN_TARGET_WIZARD
+// ae:g (ch:JFrame): Open New Hardware Target: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, ae:g)
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// cm:N (ae:g):  Open Server : addNotify
+// Tcl Message: disconnect_hw_server localhost 
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// cm:N (ae:g):  Open Target : addNotify
+// TclEventType: HW_TARGET_CHANGE
+dismissDialog("Open Server"); // cm:N (ae:g)
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, ae:g)
+dismissDialog("Open Target"); // cm:N (ae:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, ae:g)
+selectButton("BACK", "< Back"); // JButton:AbstractButton (ButtonPanel:JPanel, ae:g)
+// TclEventType: HW_TARGET_CHANGE
+// cm:N (ae:g):  Open Target : addNotify
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+dismissDialog("Open Target"); // cm:N (ae:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, ae:g)
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// cm:N (ae:g):  Open Hardware Target : addNotify
+// Tcl Message: connect_hw_server -url localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183624823A] 
+// TclEventType: HW_TARGET_CHANGE
+// Tcl Message: set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210183624823A] 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183624823A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:\main.bit} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {F:/debug_nets.ltx} [lindex [get_hw_devices] 0] 
+// Tcl Message: current_hw_device [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0). 
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, ae:g)
+// 'o' command handler elapsed time: 10 seconds
+dismissDialog("Open Hardware Target"); // cm:N (ae:g)
+dismissDialog("Open New Hardware Target"); // ae:g (ch:JFrame)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (1) ; Not programmed", 2, "Not programmed", 1, true); // f:au (JViewport:JComponent, ch:JFrame) - Node
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (1) ; Not programmed", 2, "Not programmed", 1, true, false, false, false, true, false); // f:au (JViewport:JComponent, ch:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// aC:ac (ch:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, aC:ac)
+// cm:N (ch:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // aC:ac (ch:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {F:/debug_nets.ltx} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/main.bit} [lindex [get_hw_devices] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-32] Done pin status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'p' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // cm:N (ch:JFrame)
+// Elapsed time: 30 seconds
+selectCodeEditor("main.vhd", 370, 75); // bi:J (JPanel:JComponent, ch:JFrame)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (1) ; Programmed", 2, "Programmed", 1, true); // f:au (JViewport:JComponent, ch:JFrame) - Node
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (1) ; Programmed", 2, "Programmed", 1, true, false, false, false, true, false); // f:au (JViewport:JComponent, ch:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// aC:ac (ch:JFrame): Program Device: addNotify
+applyEnter(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, "F:/main.bit"); // an:JTextField (aO:JPanel, aC:ac)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, aC:ac)
+// cm:N (ch:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // aC:ac (ch:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {F:/debug_nets.ltx} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/main.bit} [lindex [get_hw_devices] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-32] Done pin status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // cm:N (ch:JFrame)
+// [Engine Memory]: 530 MB (+1978kb) [00:14:53]
+// [Engine Memory]: 535 MB (+4927kb) [00:14:58]
+// Elapsed time: 75 seconds
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (1) ; Programmed", 2, "xc7a35t_0 (1)", 0, true, false, false, false, true, false); // f:au (JViewport:JComponent, ch:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// aC:ac (ch:JFrame): Program Device: addNotify
+applyEnter(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, "F:/main.bit"); // an:JTextField (aO:JPanel, aC:ac)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, aC:ac)
+// cm:N (ch:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // aC:ac (ch:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {F:/debug_nets.ltx} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/main.bit} [lindex [get_hw_devices] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-32] Done pin status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // cm:N (ch:JFrame)
+// Elapsed time: 146 seconds
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (1) ; Programmed", 2, "xc7a35t_0 (1)", 0, true, false, false, false, true, false); // f:au (JViewport:JComponent, ch:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// aC:ac (ch:JFrame): Program Device: addNotify
+applyEnter(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, "F:/main.bit"); // an:JTextField (aO:JPanel, aC:ac)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, aC:ac)
+// cm:N (ch:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // aC:ac (ch:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {F:/debug_nets.ltx} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/main.bit} [lindex [get_hw_devices] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-32] Done pin status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // cm:N (ch:JFrame)
+// Elapsed time: 108 seconds
+selectCodeEditor("main.vhd", 228, 214); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 161 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, ch:JFrame)
+selectMenuItem((HResource) null, "xc7a35t_0"); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// aC:ac (ch:JFrame): Program Device: addNotify
+applyEnter(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, "F:/main.bit"); // an:JTextField (aO:JPanel, aC:ac)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, aC:ac)
+// cm:N (ch:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // aC:ac (ch:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {F:/debug_nets.ltx} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/main.bit} [lindex [get_hw_devices] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-32] Done pin status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // cm:N (ch:JFrame)
+// Elapsed time: 18 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, ch:JFrame)
+selectMenuItem((HResource) null, "xc7a35t_0"); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// aC:ac (ch:JFrame): Program Device: addNotify
+applyEnter(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, "F:/main.bit"); // an:JTextField (aO:JPanel, aC:ac)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, aC:ac)
+// cm:N (ch:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // aC:ac (ch:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {F:/debug_nets.ltx} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/main.bit} [lindex [get_hw_devices] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-32] Done pin status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // cm:N (ch:JFrame)
+// Elapsed time: 27 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// aC:ac (ch:JFrame): Program Device: addNotify
+applyEnter(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, "F:/main.bit"); // an:JTextField (aO:JPanel, aC:ac)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, aC:ac)
+// cm:N (ch:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // aC:ac (ch:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {F:/debug_nets.ltx} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/main.bit} [lindex [get_hw_devices] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-32] Done pin status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // cm:N (ch:JFrame)
+// Elapsed time: 34 seconds
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (1) ; Programmed", 2, "Programmed", 1, true, false, false, false, true, false); // f:au (JViewport:JComponent, ch:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// aC:ac (ch:JFrame): Program Device: addNotify
+applyEnter(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, "F:/main.bit"); // an:JTextField (aO:JPanel, aC:ac)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, aC:ac)
+// cm:N (ch:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // aC:ac (ch:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {F:/debug_nets.ltx} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/main.bit} [lindex [get_hw_devices] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-32] Done pin status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // cm:N (ch:JFrame)
+// Elapsed time: 67 seconds
+selectCodeEditor("main.vhd", 351, 311); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 47 seconds
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (1) ; Programmed", 2, "xc7a35t_0 (1)", 0, true, false, false, false, true, false); // f:au (JViewport:JComponent, ch:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// aC:ac (ch:JFrame): Program Device: addNotify
+applyEnter(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, "F:/main.bit"); // an:JTextField (aO:JPanel, aC:ac)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, aC:ac)
+// cm:N (ch:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // aC:ac (ch:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {F:/debug_nets.ltx} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/main.bit} [lindex [get_hw_devices] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-32] Done pin status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // cm:N (ch:JFrame)
+// [Engine Memory]: 553 MB (+18837kb) [00:26:55]
+// HMemoryUtils.trashcanNow. Engine heap size: 553 MB. GUI used memory: 44 MB. Current time: 4/4/18 10:01:21 PM
+// Elapsed time: 40 seconds
+selectCodeEditor("main.vhd", 370, 299); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 43 seconds
+selectCodeEditor("main.vhd", 339, 188); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("main.vhd", 310, 176); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("main.vhd", 310, 176, false, false, false, false, true); // bi:J (JPanel:JComponent, ch:JFrame) - Double Click
+selectCodeEditor("main.vhd", 310, 176); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "main.vhd", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("main.vhd", 131, 281); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 119 seconds
+typeControlKey((HResource) null, "main.vhd", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "main.vhd", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("main.vhd", 125, 280); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("main.vhd", 89, 280); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("main.vhd", 110, 299); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("main.vhd", 128, 178); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("main.vhd", 384, 281); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("main.vhd", 385, 295); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 24, false); // w:Y (v:I, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RUN_LAUNCH
+// cm:N (ch:JFrame):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// Tcl Message: [Wed Apr 04 22:05:28 2018] Launched synth_1... Run output will be captured here: C:/Users/Samyak Jain/Desktop/project_3/project_3.runs/synth_1/runme.log [Wed Apr 04 22:05:28 2018] Launched impl_1... Run output will be captured here: C:/Users/Samyak Jain/Desktop/project_3/project_3.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // cm:N (ch:JFrame)
+selectCodeEditor("main.vhd", 64, 144); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("main.vhd", 131, 198); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("main.vhd", 298, 246); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("main.vhd", 201, 262); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("main.vhd", 201, 262, false, false, false, false, true); // bi:J (JPanel:JComponent, ch:JFrame) - Double Click
+selectCodeEditor("main.vhd", 201, 262); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("main.vhd", 202, 310); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("main.vhd", 94, 211); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("main.vhd", 242, 247); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("main.vhd", 159, 57); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("main.vhd", 159, 57, false, false, false, false, true); // bi:J (JPanel:JComponent, ch:JFrame) - Double Click
+selectCodeEditor("main.vhd", 159, 57); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("main.vhd", 164, 232); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("main.vhd", 164, 232, false, false, false, false, true); // bi:J (JPanel:JComponent, ch:JFrame) - Double Click
+selectCodeEditor("main.vhd", 164, 232); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("main.vhd", 170, 348); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("main.vhd", 169, 348, false, false, false, false, true); // bi:J (JPanel:JComponent, ch:JFrame) - Double Click
+selectCodeEditor("main.vhd", 169, 347); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("main.vhd", 159, 315); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("main.vhd", 159, 315, false, false, false, false, true); // bi:J (JPanel:JComponent, ch:JFrame) - Double Click
+selectCodeEditor("main.vhd", 159, 315); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("main.vhd", 150, 193); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("main.vhd", 150, 193, false, false, false, false, true); // bi:J (JPanel:JComponent, ch:JFrame) - Double Click
+selectCodeEditor("main.vhd", 150, 193); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("main.vhd", 20, 65); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 364 seconds
+selectButton(PAResourceCommand.PACommandNames_PROJECT_SUMMARY, "project_summary"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROJECT_SUMMARY
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_PANEL_TABBED, PAResourceOtoP.ProjectSummaryUtilizationPanel_TABLE, "Table", 1); // g:g (f:JPanel, ch:JFrame)
+// TclEventType: RUN_COMPLETED
+// Q:al (ch:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 79 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, Q:al)
+dismissDialog("Bitstream Generation Completed"); // Q:al (ch:JFrame)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (1) ; Programmed", 2, "Programmed", 1, true, false, false, false, true, false); // f:au (JViewport:JComponent, ch:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// aC:ac (ch:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, aC:ac)
+// cm:N (ch:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // aC:ac (ch:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {F:/debug_nets.ltx} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/main.bit} [lindex [get_hw_devices] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-32] Done pin status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'p' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // cm:N (ch:JFrame)
+// Elapsed time: 33 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "main.vhd", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// [GUI Memory]: 94 MB (+1290kb) [00:40:15]
+// Elapsed time: 15 seconds
+selectCodeEditor("main.vhd", 316, 147); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("main.vhd", 376, 182); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("main.vhd", 384, 149); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("main.vhd", 418, 163); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("main.vhd", 63, 214); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("main.vhd", 87, 95); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("main.vhd", 24, 216); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 24, false); // w:Y (v:I, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RUN_LAUNCH
+// cm:N (ch:JFrame):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Apr 04 22:15:26 2018] Launched synth_1... Run output will be captured here: C:/Users/Samyak Jain/Desktop/project_3/project_3.runs/synth_1/runme.log [Wed Apr 04 22:15:26 2018] Launched impl_1... Run output will be captured here: C:/Users/Samyak Jain/Desktop/project_3/project_3.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // cm:N (ch:JFrame)
+// Elapsed time: 74 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "main.vhd", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 331 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationGadget_PROJECT_SUMMARY_UTILIZATION_GADGET_TABBED, PAResourceOtoP.ProjectSummaryUtilizationGadget_POST_IMPLEMENTATION, "Post-Implementation", 1); // b:g (JPanel:JComponent, ch:JFrame)
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationGadget_PROJECT_SUMMARY_UTILIZATION_GADGET_TABBED, PAResourceOtoP.ProjectSummaryUtilizationGadget_POST_SYNTHESIS, "Post-Synthesis", 0); // b:g (JPanel:JComponent, ch:JFrame)
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_PANEL_TABBED, PAResourceOtoP.ProjectSummaryUtilizationPanel_TABLE, "Table", 1); // g:g (f:JPanel, ch:JFrame)
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_PANEL_TABBED, PAResourceOtoP.ProjectSummaryUtilizationPanel_GRAPH, "Graph", 0); // g:g (f:JPanel, ch:JFrame)
+// TclEventType: RUN_COMPLETED
+// Q:al (ch:JFrame): Bitstream Generation Completed: addNotify
+// [GUI Memory]: 94 MB (+140kb) [00:48:06]
+// Elapsed time: 10 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, Q:al)
+dismissDialog("Bitstream Generation Completed"); // Q:al (ch:JFrame)
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_PANEL_TABBED, PAResourceOtoP.ProjectSummaryUtilizationPanel_TABLE, "Table", 1); // g:g (f:JPanel, ch:JFrame)
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Open Target]", 26, false); // w:Y (v:I, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem((HResource) null, "localhost:3121,xilinx_tcf/Digilent/210183624823A,PARAM.FREQUENCY:15000000"); // Z:JMenuItem (ag:JPopupMenu, Popup:JWindow)
+// [GUI Memory]: 95 MB (+1364kb) [00:48:28]
+// cm:N (ch:JFrame):  Open Hardware Target : addNotify
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: disconnect_hw_server localhost 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server -url localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183624823A] 
+// TclEventType: HW_TARGET_CHANGE
+// Tcl Message: set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210183624823A] 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183624823A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:\main.bit} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {F:/debug_nets.ltx} [lindex [get_hw_devices] 0] 
+// Tcl Message: current_hw_device [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Open Hardware Target"); // cm:N (ch:JFrame)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (1) ; Programmed", 2, "Programmed", 1, true); // f:au (JViewport:JComponent, ch:JFrame) - Node
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (1) ; Programmed", 2, "Programmed", 1, true, false, false, false, true, false); // f:au (JViewport:JComponent, ch:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// aC:ac (ch:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, aC:ac)
+// cm:N (ch:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // aC:ac (ch:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {F:/debug_nets.ltx} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/main.bit} [lindex [get_hw_devices] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-32] Done pin status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // cm:N (ch:JFrame)
+// Elapsed time: 21 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "main.vhd", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+selectCodeEditor("main.vhd", 381, 215); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// [GUI Memory]: 96 MB (+681kb) [00:49:06]
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// [GUI Memory]: 97 MB (+1529kb) [00:49:13]
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 24, false); // w:Y (v:I, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: reset_run synth_1 
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// ui.g.e: ERROR(Generate Bitstream Preparing runs...): Another long task is already running: ui.g.e: Previous LongTask(Update Design Hierarchy Updating Design Hierarchy) stack:  	at ui.b.b.cm.cqn(SourceFile:541) 	at ui.views.k.Q.run(SourceFile:518) 	at ui.data.design.j.ct(SourceFile:163) 	at ui.g.U.actionPerformed(SourceFile:62) 	at javax.swing.Timer.fireActionPerformed(Unknown Source) 	at ui.g.T.fireActionPerformed(SourceFile:105) 	at javax.swing.Timer$DoPostEvent.run(Unknown Source) 	at java.awt.event.InvocationEvent.dispatch(Unknown Source) 	at java.awt.EventQueue.dispatchEventImpl(Unknown Source) 	at java.awt.EventQueue.access$400(Unknown Source) 	at java.awt.EventQueue$3.run(Unknown Source) 	at java.awt.EventQueue$3.run(Unkno
+selectButton("RDIResource.ProgressDialog_BACKGROUND_TASK_RUNNING_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, Q:JDialog)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 24, false); // w:Y (v:I, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RUN_LAUNCH
+// cm:N (ch:JFrame):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Apr 04 22:23:47 2018] Launched synth_1... Run output will be captured here: C:/Users/Samyak Jain/Desktop/project_3/project_3.runs/synth_1/runme.log [Wed Apr 04 22:23:47 2018] Launched impl_1... Run output will be captured here: C:/Users/Samyak Jain/Desktop/project_3/project_3.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // cm:N (ch:JFrame)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// [GUI Memory]: 100 MB (+3437kb) [00:53:53]
+// TclEventType: RUN_COMPLETED
+// Q:al (ch:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 368 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, Q:al)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// cm:N (ch:JFrame):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, cm:N)
+selectButton("RDIResource.ProgressDialog_ARE_YOU_SURE_YOU_WANT_TO_CANCEL_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, Q:JDialog)
+// [Engine Memory]: 612 MB (+61857kb) [00:55:40]
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// HMemoryUtils.trashcanNow. Engine heap size: 681 MB. GUI used memory: 50 MB. Current time: 4/4/18 10:30:08 PM
+// TclEventType: DESIGN_CLOSE
+// [Engine Memory]: 685 MB (+76849kb) [00:55:45]
+// TclEventType: DESIGN_NEW_FAILED
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds 
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2014.4 
+// Tcl Message: Loading clock regions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a35ti/ClockRegion.xml Loading clock buffers from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a35ti/ClockBuffers.xml Loading clock placement rules from C:/Xilinx/Vivado/2014.4/data/parts/xilinx/artix7/ClockPlacerRules.xml Loading package pin functions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/PinFunctions.xml... Loading package from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a35ti/cpg236/Package.xml Loading io standards from C:/Xilinx/Vivado/2014.4/data\./parts/xilinx/artix7/IOStandards.xml Loading device configuration modes from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/ConfigModes.xml 
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Common 17-41] Interrupt caught. Command should exit soon. 
+// Tcl Message: Parsing XDC File [C:/Users/Samyak Jain/Desktop/project_3/.Xil/Vivado-1240-Samyak/dcp/main.xdc] Finished Parsing XDC File [C:/Users/Samyak Jain/Desktop/project_3/.Xil/Vivado-1240-Samyak/dcp/main.xdc] Reading XDEF placement. Reading placer database... Reading XDEF routing. Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 978.539 ; gain = 0.000 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: open_run: Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 978.539 ; gain = 227.227 
+// Tcl Message: INFO: [Common 17-344] 'open_run' was cancelled 
+// 'dg' command handler elapsed time: 15 seconds
+// [Engine Memory]: 685 MB (+606kb) [00:55:46]
+dismissDialog("Open Implemented Design"); // cm:N (ch:JFrame)
+selectCodeEditor("main.vhd", 410, 144); // bi:J (JPanel:JComponent, ch:JFrame)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (1) ; Programmed", 2, "xc7a35t_0 (1)", 0, true, false, false, false, true, false); // f:au (JViewport:JComponent, ch:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// aC:ac (ch:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, aC:ac)
+// cm:N (ch:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // aC:ac (ch:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {F:/debug_nets.ltx} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/main.bit} [lindex [get_hw_devices] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 0] 
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 0] 
+// Tcl Message: ERROR: [Labtools 27-2271] Target localhost/xilinx_tcf/Digilent/210183624823A is no longer opened. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-register this hardware target. 
+dismissDialog("Program Device"); // cm:N (ch:JFrame)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (1) ; Not programmed", 2, "xc7a35t_0 (1)", 0, true, false, false, false, true, false); // f:au (JViewport:JComponent, ch:JFrame) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Open Target]", 26, false); // w:Y (v:I, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_TARGET_WIZARD, "Open New Target..."); // Z:JMenuItem (ag:JPopupMenu, Popup:JWindow)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Run Command: PAResourceCommand.PACommandNames_OPEN_TARGET_WIZARD
+// ae:g (ch:JFrame): Open New Hardware Target: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, ae:g)
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// cm:N (ae:g):  Open Server : addNotify
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: disconnect_hw_server localhost 
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// cm:N (ae:g):  Open Target : addNotify
+// TclEventType: HW_TARGET_CHANGE
+dismissDialog("Open Server"); // cm:N (ae:g)
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, ae:g)
+dismissDialog("Open Target"); // cm:N (ae:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, ae:g)
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// cm:N (ae:g):  Open Hardware Target : addNotify
+// Tcl Message: connect_hw_server -url localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 

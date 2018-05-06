@@ -1,0 +1,117 @@
+/*
+
+Vivado v2014.4 (64-bit)
+SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+Process ID: 9448
+
+Current time: 	4/4/18 6:45:54 PM
+Time zone: 	India Standard Time (Asia/Calcutta)
+
+OS: Windows 8
+Version: 6.2
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1366x768
+Screen resolution (DPI): 96
+Available screens: 1
+
+Java version: 	1.8.0_05 64-bit
+Java home: 	C:/Xilinx/Vivado/2014.4/tps/win64/jre
+
+User name: 	Samyak Jain
+User directory: C:/Users/Samyak Jain/Desktop/project_3
+User country: 	IN
+User language: 	en
+User locale: 	en_IN
+Vivado preferences path: C:/Users/Samyak Jain/AppData/Roaming/Xilinx/Vivado/2014.4/vivado.ini
+Vivado layouts directory: C:/Users/Samyak Jain/AppData/Roaming/Xilinx/Vivado/2014.4/layouts/application
+
+GUI allocated memory:	218 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 376 MB
+
+*/
+
+// TclEventType: START_GUI
+// HColorUtils.generateUniqueColorPalette (num colors: 55) elapsed time: 1.3s
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// cm:N (ch:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {C:/Users/Samyak Jain/Desktop/project_3/project_3.xpr} 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 27 MB (+26344kb) [00:00:08]
+// [Engine Memory]: 373 MB (+239839kb) [00:00:08]
+// Tcl Message: open_project {C:/Users/Samyak Jain/Desktop/project_3/project_3.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 47 MB (+20447kb) [00:00:10]
+// [Engine Memory]: 385 MB (+12181kb) [00:00:10]
+// [Engine Memory]: 428 MB (+44855kb) [00:00:11]
+// [GUI Memory]: 53 MB (+6232kb) [00:00:13]
+// [Engine Memory]: 437 MB (+10108kb) [00:00:13]
+// [Engine Memory]: 440 MB (+2854kb) [00:00:14]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2014.4/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 443 MB. GUI used memory: 30 MB. Current time: 4/4/18 6:46:01 PM
+// [GUI Memory]: 55 MB (+2330kb) [00:00:16]
+// [Engine Memory]: 449 MB (+9220kb) [00:00:16]
+// [GUI Memory]: 56 MB (+565kb) [00:00:16]
+// [GUI Memory]: 57 MB (+1140kb) [00:00:16]
+// [Engine Memory]: 449 MB (+196kb) [00:00:16]
+// [Engine Memory]: 450 MB (+1232kb) [00:00:16]
+// [Engine Memory]: 452 MB (+2015kb) [00:00:17]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 453 MB (+655kb) [00:00:17]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 458 MB (+5419kb) [00:00:18]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 459 MB (+1077kb) [00:00:18]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 57 MB (+9kb) [00:00:20]
+// [GUI Memory]: 57 MB (+584kb) [00:00:20]
+// [GUI Memory]: 58 MB (+584kb) [00:00:20]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: project_3; location: C:/Users/Samyak Jain/Desktop/project_3; part: xc7a35ticpg236-1L
+// Tcl Message: open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:14 . Memory (MB): peak = 747.656 ; gain = 173.895 
+dismissDialog("Open Project"); // cm:N (ch:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [Engine Memory]: 459 MB (+638kb) [00:00:21]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 464 MB (+4829kb) [00:00:22]
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 58 MB (+40kb) [00:00:29]
+// [Engine Memory]: 464 MB (+172kb) [00:00:34]
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 25, true); // w:Y (v:I, ch:JFrame) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// [Engine Memory]: 464 MB (+200kb) [00:00:34]
+// [Engine Memory]: 465 MB (+798kb) [00:00:35]
+// Tcl Message: open_hw 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager]", 25, true); // w:Y (v:I, ch:JFrame) - Node
+// [Engine Memory]: 466 MB (+368kb) [00:00:37]
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager]", 25); // w:Y (v:I, ch:JFrame)
+// [Engine Memory]: 482 MB (+17453kb) [00:00:39]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Open Target]", 26, false); // w:Y (v:I, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_TARGET_WIZARD, "Open New Target..."); // Z:JMenuItem (ag:JPopupMenu, Popup:JWindow)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Run Command: PAResourceCommand.PACommandNames_OPEN_TARGET_WIZARD
+// ae:g (ch:JFrame): Open New Hardware Target: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, ae:g)
+// [Engine Memory]: 483 MB (+1245kb) [00:00:42]
+// cm:N (ae:g):  Open Server : addNotify
+// [GUI Memory]: 59 MB (+1602kb) [00:00:47]
+// [GUI Memory]: 60 MB (+773kb) [00:00:52]

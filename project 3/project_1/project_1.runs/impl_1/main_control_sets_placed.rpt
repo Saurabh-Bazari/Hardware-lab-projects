@@ -1,0 +1,85 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (win64) Build 1071353 Tue Nov 18 18:29:27 MST 2014
+| Date         : Sat Mar 17 15:30:20 2018
+| Host         : Samyak running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file main_control_sets_placed.rpt
+| Design       : main
+| Device       : xc7a35ti
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    32 |
+| Minimum Number of register sites lost to control set restrictions |    34 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              36 |           16 |
+| No           | No                    | Yes                    |               1 |            1 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |             104 |           54 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             193 |           65 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++---------------------+--------------------------------------+--------------------------------------+------------------+----------------+
+|     Clock Signal    |             Enable Signal            |           Set/Reset Signal           | Slice Load Count | Bel Load Count |
++---------------------+--------------------------------------+--------------------------------------+------------------+----------------+
+|  n_0_receive_en_reg |                                      | send_data/n_0_r_TX_Done_reg          |                1 |              1 |
+|  enable_IBUF_BUFG   | n_0_ram1[8][11]_i_2                  | n_0_ram1[8][11]_i_1                  |                2 |              4 |
+|  enable_IBUF_BUFG   | receive_en                           | n_0_bdata[11]_i_1                    |                3 |              4 |
+|  enable_IBUF_BUFG   | n_0_output[7]_i_1                    | n_0_output[15]_i_1                   |                2 |              5 |
+|  enable_IBUF_BUFG   |                                      |                                      |                4 |              6 |
+| ~flag               |                                      |                                      |                2 |              6 |
+|  clk_IBUF_BUFG      | send_data/n_0_r_TX_Data[7]_i_1       |                                      |                2 |              8 |
+|  enable_IBUF_BUFG   | n_0_data[7]_i_1                      |                                      |                4 |              8 |
+|  enable_IBUF_BUFG   | n_0_output[7]_i_1                    |                                      |                5 |              8 |
+|  enable_IBUF_BUFG   | n_0_ram1[0][7]_i_2                   | n_0_ram1[0][7]_i_1                   |                4 |              8 |
+|  enable_IBUF_BUFG   | n_0_ram1[10][7]_i_1                  | n_0_ram1[0][7]_i_1                   |                2 |              8 |
+|  enable_IBUF_BUFG   | n_0_ram1[11][7]_i_1                  |                                      |                3 |              8 |
+|  enable_IBUF_BUFG   | n_0_ram1[12][7]_i_1                  |                                      |                4 |              8 |
+|  enable_IBUF_BUFG   | n_0_ram1[13][7]_i_1                  |                                      |                2 |              8 |
+|  enable_IBUF_BUFG   | n_0_ram1[14][7]_i_1                  | n_0_ram1[0][7]_i_1                   |                4 |              8 |
+|  enable_IBUF_BUFG   | n_0_ram1[15][7]_i_1                  | n_0_ram1[0][7]_i_1                   |                2 |              8 |
+|  enable_IBUF_BUFG   | n_0_ram1[1][7]_i_1                   | n_0_ram1[0][7]_i_1                   |                2 |              8 |
+|  enable_IBUF_BUFG   | n_0_ram1[2][7]_i_1                   | n_0_ram1[0][7]_i_1                   |                3 |              8 |
+|  enable_IBUF_BUFG   | n_0_ram1[3][7]_i_1                   | n_0_ram1[0][7]_i_1                   |                3 |              8 |
+|  enable_IBUF_BUFG   | n_0_ram1[4][7]_i_1                   | n_0_ram1[0][7]_i_1                   |                3 |              8 |
+|  enable_IBUF_BUFG   | n_0_ram1[5][7]_i_1                   | n_0_ram1[0][7]_i_1                   |                1 |              8 |
+|  enable_IBUF_BUFG   | n_0_ram1[6][7]_i_1                   | n_0_ram1[0][7]_i_1                   |                3 |              8 |
+|  enable_IBUF_BUFG   | n_0_ram1[7][7]_i_1                   | n_0_ram1[0][7]_i_1                   |                3 |              8 |
+|  enable_IBUF_BUFG   | n_0_ram1[8][11]_i_2                  | n_0_ram1[0][7]_i_1                   |                3 |              8 |
+|  enable_IBUF_BUFG   | n_0_ram1[9][7]_i_1                   | n_0_ram1[0][7]_i_1                   |                3 |              8 |
+|  enable_IBUF_BUFG   | receive_en                           |                                      |               10 |             10 |
+|  clk_IBUF_BUFG      | receive_data/n_0_r_Clk_Count[13]_i_1 |                                      |                9 |             14 |
+|  clk_IBUF_BUFG      | send_data/n_0_r_Clk_Count[13]_i_2__0 | send_data/n_0_r_Clk_Count[13]_i_1__0 |                5 |             14 |
+|  clk_IBUF_BUFG      |                                      |                                      |               10 |             24 |
+|  enable_IBUF_BUFG   | receive_en                           | n_0_counter[31]_i_1                  |                8 |             30 |
+|  enable_IBUF_BUFG   | n_0_freq[31]_i_2                     |                                      |               15 |             32 |
+|  enable_IBUF_BUFG   | n_0_freq[31]_i_2                     | n_0_freq[31]_i_1                     |                9 |             32 |
++---------------------+--------------------------------------+--------------------------------------+------------------+----------------+
+
+

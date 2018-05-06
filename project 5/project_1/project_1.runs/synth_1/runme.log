@@ -1,0 +1,587 @@
+
+*** Running vivado
+    with args -log main.vds -m64 -mode batch -messageDb vivado.pb -source main.tcl
+
+
+****** Vivado v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source main.tcl
+# set_param gui.test TreeTableDev
+# set_param xicom.use_bs_reader 1
+# debug::add_scope template.lib 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7a35ticpg236-1L
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir C:/Users/Saurabh/Desktop/project_1/project_1.cache/wt [current_project]
+# set_property parent.project_path C:/Users/Saurabh/Desktop/project_1/project_1.xpr [current_project]
+# set_property default_lib xil_defaultlib [current_project]
+# set_property target_language VHDL [current_project]
+# read_vhdl -library xil_defaultlib {
+#   C:/Users/Saurabh/Desktop/project_1/project_1.srcs/sources_1/new/receive1.vhd
+#   C:/Users/Saurabh/Desktop/project_1/project_1.srcs/sources_1/new/send.vhd
+#   C:/Users/Saurabh/Desktop/project_1/project_1.srcs/sources_1/new/main.vhd
+# }
+# read_xdc C:/Users/Saurabh/Desktop/project_1/project_1.srcs/constrs_1/new/main.xdc
+# set_property used_in_implementation false [get_files C:/Users/Saurabh/Desktop/project_1/project_1.srcs/constrs_1/new/main.xdc]
+# catch { write_hwdef -file main.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top main -part xc7a35ticpg236-1L
+Command: synth_design -top main -part xc7a35ticpg236-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 244.012 ; gain = 61.957
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'main' [C:/Users/Saurabh/Desktop/project_1/project_1.srcs/sources_1/new/main.vhd:45]
+INFO: [Synth 8-3491] module 'UART_RX' declared at 'C:/Users/Saurabh/Desktop/project_1/project_1.srcs/sources_1/new/send.vhd:5' bound to instance 'receive_data' of component 'UART_RX' [C:/Users/Saurabh/Desktop/project_1/project_1.srcs/sources_1/new/main.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'UART_RX' [C:/Users/Saurabh/Desktop/project_1/project_1.srcs/sources_1/new/send.vhd:19]
+	Parameter g_CLKS_PER_BIT bound to: 10417 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'UART_RX' (1#1) [C:/Users/Saurabh/Desktop/project_1/project_1.srcs/sources_1/new/send.vhd:19]
+INFO: [Synth 8-3491] module 'UART_TX' declared at 'C:/Users/Saurabh/Desktop/project_1/project_1.srcs/sources_1/new/receive1.vhd:5' bound to instance 'send_data' of component 'UART_TX' [C:/Users/Saurabh/Desktop/project_1/project_1.srcs/sources_1/new/main.vhd:86]
+INFO: [Synth 8-638] synthesizing module 'UART_TX' [C:/Users/Saurabh/Desktop/project_1/project_1.srcs/sources_1/new/receive1.vhd:19]
+	Parameter g_CLKS_PER_BIT bound to: 10417 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'UART_TX' (2#1) [C:/Users/Saurabh/Desktop/project_1/project_1.srcs/sources_1/new/receive1.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'main' (3#1) [C:/Users/Saurabh/Desktop/project_1/project_1.srcs/sources_1/new/main.vhd:45]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 278.172 ; gain = 96.117
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 278.172 ; gain = 96.117
+---------------------------------------------------------------------------------
+Loading clock regions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a35ti/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a35ti/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.4/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a35ti/cpg236/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.4/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/ConfigModes.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Saurabh/Desktop/project_1/project_1.srcs/constrs_1/new/main.xdc]
+WARNING: [Vivado 12-507] No nets matched 'enable_IBUF'. [C:/Users/Saurabh/Desktop/project_1/project_1.srcs/constrs_1/new/main.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Saurabh/Desktop/project_1/project_1.srcs/constrs_1/new/main.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+Finished Parsing XDC File [C:/Users/Saurabh/Desktop/project_1/project_1.srcs/constrs_1/new/main.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 585.590 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 585.590 ; gain = 403.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35ticpg236-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 585.590 ; gain = 403.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 585.590 ; gain = 403.535
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'r_SM_Main_reg' in module 'UART_RX'
+ROM "r_SM_Main" won't be mapped to Block RAM because address size (1) smaller than threshold (5) 
+ROM "r_SM_Main" won't be mapped to Block RAM because address size (1) smaller than threshold (5) 
+ROM "r_SM_Main" won't be mapped to Block RAM because address size (1) smaller than threshold (5) 
+ROM "ram1_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[8]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[8]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[9]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[9]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[10]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[10]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[11]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[12]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[13]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[14]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[14]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[15]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[15]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+INFO: [Synth 8-3354] encoded FSM with state register 'r_SM_Main_reg' using encoding 'sequential' in module 'UART_RX'
+WARNING: [Synth 8-327] inferring latch for variable 'mode_reg' [C:/Users/Saurabh/Desktop/project_1/project_1.srcs/sources_1/new/main.vhd:97]
+WARNING: [Synth 8-327] inferring latch for variable 'address_reg' [C:/Users/Saurabh/Desktop/project_1/project_1.srcs/sources_1/new/main.vhd:160]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 585.590 ; gain = 403.535
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 8     
+	   8 Input     16 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 2     
+	   3 Input     16 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 3     
+	               16 Bit    Registers := 18    
+	               14 Bit    Registers := 2     
+	                8 Bit    Registers := 3     
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 20    
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 177   
+	   2 Input     15 Bit        Muxes := 2     
+	   2 Input     14 Bit        Muxes := 2     
+	   5 Input     14 Bit        Muxes := 1     
+	   6 Input     14 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   5 Input      3 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 33    
+	   5 Input      1 Bit        Muxes := 4     
+	   6 Input      1 Bit        Muxes := 6     
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module main 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 8     
+	   8 Input     16 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 2     
+	   3 Input     16 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
+	               16 Bit    Registers := 18    
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 20    
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 177   
+	   2 Input     15 Bit        Muxes := 2     
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 32    
+	   3 Input      1 Bit        Muxes := 1     
+Module UART_RX 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               14 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 1     
+	   5 Input     14 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 4     
+Module UART_TX 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               14 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   6 Input     14 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 3     
+	   6 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 585.590 ; gain = 403.535
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+ROM "ram1_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[8]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[8]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[9]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[9]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[10]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[10]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[11]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[12]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[13]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[14]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[14]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[15]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ram1_reg[15]" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 585.590 ; gain = 403.535
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 585.590 ; gain = 403.535
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ram1_reg[15][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ram1_reg[10][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ram1_reg[9][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ram1_reg[7][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ram1_reg[6][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ram1_reg[5][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ram1_reg[4][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ram1_reg[3][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ram1_reg[2][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ram1_reg[1][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ram1_reg[0][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ram1_reg[13][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ram1_reg[12][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ram1_reg[11][15] )
+WARNING: [Synth 8-3332] Sequential element (r_RX_DV_reg) is unused and will be removed from module UART_RX.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[0][15] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[0][14] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[0][13] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[0][12] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[0][11] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[0][10] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[0][9] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[0][8] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[1][15] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[1][14] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[1][13] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[1][12] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[1][11] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[1][10] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[1][9] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[1][8] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[2][15] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[2][14] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[2][13] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[2][12] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[2][11] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[2][10] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[2][9] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[2][8] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[3][15] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[3][14] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[3][13] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[3][12] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[3][11] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[3][10] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[3][9] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[3][8] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[4][15] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[4][14] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[4][13] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[4][12] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[4][11] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[4][10] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[4][9] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[4][8] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[5][15] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[5][14] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[5][13] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[5][12] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[5][11] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[5][10] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[5][9] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[5][8] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[6][15] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[6][14] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[6][13] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[6][12] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[6][11] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[6][10] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[6][9] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[6][8] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[7][15] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[7][14] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[7][13] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[7][12] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[7][11] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[7][10] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[7][9] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[7][8] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[8][15] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[8][14] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[8][13] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[8][12] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[9][15] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[9][14] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[9][13] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[9][12] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[9][11] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[9][10] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[9][9] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[10][15] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[10][14] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[10][13] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[10][12] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[10][11] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[10][10] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[10][9] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[10][8] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[11][15] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[11][14] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[11][13] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[11][12] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[11][11] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[11][10] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[11][9] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[11][8] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[12][15] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[12][14] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[12][13] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[12][12] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[12][11] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[12][10] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[12][9] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ram1_reg[12][8] ) is unused and will be removed from module main.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 585.590 ; gain = 403.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 585.590 ; gain = 403.535
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 585.590 ; gain = 403.535
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 585.590 ; gain = 403.535
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 585.590 ; gain = 403.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 585.590 ; gain = 403.535
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 601.656 ; gain = 419.602
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 601.656 ; gain = 419.602
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 601.656 ; gain = 419.602
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 601.656 ; gain = 419.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |   153|
+|3     |LUT1   |    92|
+|4     |LUT2   |   231|
+|5     |LUT3   |   292|
+|6     |LUT4   |   476|
+|7     |LUT5   |   289|
+|8     |LUT6   |   432|
+|9     |MUXF7  |    16|
+|10    |MUXF8  |     8|
+|11    |FDCE   |     1|
+|12    |FDRE   |   317|
+|13    |FDSE   |    10|
+|14    |LD     |     6|
+|15    |IBUF   |     3|
+|16    |OBUF   |    17|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------+--------+------+
+|      |Instance       |Module  |Cells |
++------+---------------+--------+------+
+|1     |top            |        |  2345|
+|2     |  receive_data |UART_RX |   178|
+|3     |  send_data    |UART_TX |    68|
++------+---------------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 601.656 ; gain = 419.602
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 131 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:28 . Memory (MB): peak = 601.656 ; gain = 97.641
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 601.656 ; gain = 419.602
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 162 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'main' is not ideal for floorplanning, since the cellview 'main' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 6 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  LD => LDCE (inverted pins: G): 6 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+37 Infos, 104 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 601.656 ; gain = 409.742
+# write_checkpoint -noxdef main.dcp
+# catch { report_utilization -file main_utilization_synth.rpt -pb main_utilization_synth.pb }
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.085 . Memory (MB): peak = 601.656 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 04 19:17:32 2018...

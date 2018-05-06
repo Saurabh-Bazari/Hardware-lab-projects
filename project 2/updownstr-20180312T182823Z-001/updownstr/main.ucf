@@ -1,0 +1,12 @@
+NET "counter<0>" LOC="U18";
+NET "counter<1>" LOC="M14";
+NET "counter<2>" LOC="N14";
+NET "counter<3>" LOC="L14";
+NET "counter<4>" LOC="M13";
+NET "counter<5>" LOC="D4";
+NET "counter<6>" LOC="P16";
+NET "counter<7>" LOC="N12";
+NET "reset" LOC="C14";
+NET "enable" LOC="A10";
+NET "UP" LOC = "D14";
+NET "clk_in" LOC = "L15";

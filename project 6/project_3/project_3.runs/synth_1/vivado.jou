@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Thu Apr 05 00:09:01 2018
+# Process ID: 8476
+# Log file: C:/Users/Samyak Jain/Desktop/project_3/project_3.runs/synth_1/main.vds
+# Journal file: C:/Users/Samyak Jain/Desktop/project_3/project_3.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source main.tcl

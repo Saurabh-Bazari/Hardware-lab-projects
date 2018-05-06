@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Fri Apr 20 18:03:04 2018
+# Process ID: 1380
+# Log file: C:/Users/Saurabh/Downloads/project_1/vivado.log
+# Journal file: C:/Users/Saurabh/Downloads/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Saurabh/Downloads/project_1/project_1.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Saurabh/Desktop/project_1' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2014.4/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:05 . Memory (MB): peak = 756.270 ; gain = 181.391
+update_compile_order -fileset sim_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 20 18:03:38 2018...

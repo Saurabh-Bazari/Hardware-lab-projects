@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Fri Apr 20 14:33:11 2018
+# Process ID: 9072
+# Log file: C:/Users/Saurabh/Desktop/Hardware Lab Projects/project 7/project_xd/vivado.log
+# Journal file: C:/Users/Saurabh/Desktop/Hardware Lab Projects/project 7/project_xd\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Saurabh/Desktop/Hardware Lab Projects/project 7/project_xd/project_xd.xpr}

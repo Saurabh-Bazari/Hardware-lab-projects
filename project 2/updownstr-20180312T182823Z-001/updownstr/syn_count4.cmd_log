@@ -1,0 +1,55 @@
+xst -intstyle ise -ifn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.xst" -ofn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.syr" 
+xst -intstyle ise -ifn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.xst" -ofn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.syr" 
+xst -intstyle ise -ifn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.xst" -ofn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.syr" 
+xst -intstyle ise -ifn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.xst" -ofn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.syr" 
+xst -intstyle ise -ifn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.xst" -ofn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.syr" 
+xst -intstyle ise -ifn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.xst" -ofn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.syr" 
+xst -intstyle ise -ifn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.xst" -ofn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.syr" 
+xst -intstyle ise -ifn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.xst" -ofn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.syr" 
+xst -intstyle ise -ifn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.xst" -ofn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.syr" 
+xst -intstyle ise -ifn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.xst" -ofn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.syr" 
+xst -intstyle ise -ifn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.xst" -ofn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.syr" 
+xst -intstyle ise -ifn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.xst" -ofn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.syr" 
+xst -intstyle ise -ifn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.xst" -ofn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.syr" 
+xst -intstyle ise -ifn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.xst" -ofn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.syr" 
+xst -intstyle ise -ifn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.xst" -ofn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc main.ucf -p xc6slx45-csg324-3 "syn_count4.ngc" syn_count4.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o syn_count4_map.ncd syn_count4.ngd syn_count4.pcf 
+par -w -intstyle ise -ol high -mt off syn_count4_map.ncd syn_count4.ncd syn_count4.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml syn_count4.twx syn_count4.ncd -o syn_count4.twr syn_count4.pcf -ucf main.ucf 
+bitgen -intstyle ise -f syn_count4.ut syn_count4.ncd 
+xst -intstyle ise -ifn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.xst" -ofn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.syr" 
+xst -intstyle ise -ifn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.xst" -ofn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.syr" 
+xst -intstyle ise -ifn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.xst" -ofn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.syr" 
+xst -intstyle ise -ifn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.xst" -ofn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.syr" 
+xst -intstyle ise -ifn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.xst" -ofn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.syr" 
+xst -intstyle ise -ifn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.xst" -ofn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.syr" 
+xst -intstyle ise -ifn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.xst" -ofn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.syr" 
+xst -intstyle ise -ifn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.xst" -ofn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.syr" 
+xst -intstyle ise -ifn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.xst" -ofn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc main.ucf -p xc6slx45-csg324-3 "syn_count4.ngc" syn_count4.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o syn_count4_map.ncd syn_count4.ngd syn_count4.pcf 
+par -w -intstyle ise -ol high -mt off syn_count4_map.ncd syn_count4.ncd syn_count4.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml syn_count4.twx syn_count4.ncd -o syn_count4.twr syn_count4.pcf -ucf main.ucf 
+bitgen -intstyle ise -f syn_count4.ut syn_count4.ncd 
+xst -intstyle ise -ifn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.xst" -ofn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.syr" 
+xst -intstyle ise -ifn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.xst" -ofn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc main.ucf -p xc6slx45-csg324-3 "syn_count4.ngc" syn_count4.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o syn_count4_map.ncd syn_count4.ngd syn_count4.pcf 
+par -w -intstyle ise -ol high -mt off syn_count4_map.ncd syn_count4.ncd syn_count4.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml syn_count4.twx syn_count4.ncd -o syn_count4.twr syn_count4.pcf -ucf main.ucf 
+bitgen -intstyle ise -f syn_count4.ut syn_count4.ncd 
+bitgen -intstyle ise -f syn_count4.ut syn_count4.ncd 
+xst -intstyle ise -ifn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.xst" -ofn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.syr" 
+xst -intstyle ise -ifn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.xst" -ofn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.syr" 
+xst -intstyle ise -ifn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.xst" -ofn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc main.ucf -p xc6slx45-csg324-3 "syn_count4.ngc" syn_count4.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o syn_count4_map.ncd syn_count4.ngd syn_count4.pcf 
+par -w -intstyle ise -ol high -mt off syn_count4_map.ncd syn_count4.ncd syn_count4.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml syn_count4.twx syn_count4.ncd -o syn_count4.twr syn_count4.pcf -ucf main.ucf 
+bitgen -intstyle ise -f syn_count4.ut syn_count4.ncd 
+xst -intstyle ise -ifn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.xst" -ofn "C:/Users/Samyak Jain/Desktop/HW/updownstr/syn_count4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc main.ucf -p xc6slx45-csg324-3 "syn_count4.ngc" syn_count4.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o syn_count4_map.ncd syn_count4.ngd syn_count4.pcf 
+par -w -intstyle ise -ol high -mt off syn_count4_map.ncd syn_count4.ncd syn_count4.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml syn_count4.twx syn_count4.ncd -o syn_count4.twr syn_count4.pcf -ucf main.ucf 

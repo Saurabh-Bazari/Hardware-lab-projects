@@ -1,0 +1,140 @@
+/*
+
+Vivado v2014.4 (64-bit)
+SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+Process ID: 10404
+
+Current time: 	4/3/18 11:25:10 PM
+Time zone: 	India Standard Time (Asia/Calcutta)
+
+OS: Windows 8
+Version: 6.2
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1366x768
+Screen resolution (DPI): 96
+Available screens: 1
+
+Java version: 	1.8.0_05 64-bit
+Java home: 	C:/Xilinx/Vivado/2014.4/tps/win64/jre
+
+User name: 	Samyak Jain
+User directory: C:/Users/Samyak Jain/Desktop/project_1
+User country: 	IN
+User language: 	en
+User locale: 	en_IN
+Vivado preferences path: C:/Users/Samyak Jain/AppData/Roaming/Xilinx/Vivado/2014.4/vivado.ini
+Vivado layouts directory: C:/Users/Samyak Jain/AppData/Roaming/Xilinx/Vivado/2014.4/layouts/application
+
+GUI allocated memory:	211 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 453 MB
+
+*/
+
+// TclEventType: START_GUI
+// HColorUtils.generateUniqueColorPalette (num colors: 56) elapsed time: 1.1s
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// cm:N (ch:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {C:/Users/Samyak Jain/Desktop/project_1/project_1.xpr} 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 27 MB (+25914kb) [00:00:07]
+// [Engine Memory]: 371 MB (+237955kb) [00:00:07]
+// Tcl Message: open_project {C:/Users/Samyak Jain/Desktop/project_1/project_1.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 60 MB (+34160kb) [00:00:09]
+// [Engine Memory]: 393 MB (+22630kb) [00:00:09]
+// [Engine Memory]: 440 MB (+49623kb) [00:00:10]
+// [Engine Memory]: 448 MB (+8093kb) [00:00:12]
+// [Engine Memory]: 450 MB (+1941kb) [00:00:13]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2014.4/data/ip'. 
+// [Engine Memory]: 453 MB (+3186kb) [00:00:13]
+// HMemoryUtils.trashcanNow. Engine heap size: 455 MB. GUI used memory: 31 MB. Current time: 4/3/18 11:25:10 PM
+// [Engine Memory]: 457 MB (+4362kb) [00:00:15]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 458 MB (+626kb) [00:00:16]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 458 MB (+135kb) [00:00:16]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 458 MB (+147kb) [00:00:16]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 458 MB (+507kb) [00:00:16]
+// [Engine Memory]: 461 MB (+2772kb) [00:00:17]
+// [Engine Memory]: 462 MB (+798kb) [00:00:17]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 462 MB (+585kb) [00:00:17]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 463 MB (+913kb) [00:00:17]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 463 MB (+20kb) [00:00:18]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 464 MB (+1028kb) [00:00:18]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 467 MB (+2633kb) [00:00:19]
+// [Engine Memory]: 467 MB (+299kb) [00:00:19]
+// [Engine Memory]: 467 MB (+131kb) [00:00:19]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 468 MB (+1236kb) [00:00:19]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: project_1; location: C:/Users/Samyak Jain/Desktop/project_1; part: xc7a35ticpg236-1L
+// Tcl Message: open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:14 . Memory (MB): peak = 756.582 ; gain = 179.883 
+dismissDialog("Open Project"); // cm:N (ch:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sim_1 
+// [Engine Memory]: 474 MB (+5779kb) [00:00:22]
+// [Engine Memory]: 474 MB (+188kb) [00:00:25]
+// PAPropertyPanels.initPanels (main.vhd) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main - Behavioral (main.vhd)]", 1, true); // u:k (I:JPanel, ch:JFrame) - Node
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main - Behavioral (main.vhd)]", 1, true); // u:k (I:JPanel, ch:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main - Behavioral (main.vhd)]", 1, true, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click - Node
+// [Engine Memory]: 474 MB (+389kb) [00:00:47]
+// [GUI Memory]: 60 MB (+137kb) [00:02:26]
+// [GUI Memory]: 60 MB (+34kb) [00:02:31]
+// [GUI Memory]: 60 MB (+93kb) [00:02:36]
+// [GUI Memory]: 60 MB (+26kb) [00:02:42]
+// [GUI Memory]: 61 MB (+723kb) [00:02:47]
+// [GUI Memory]: 61 MB (+31kb) [00:02:52]
+// [GUI Memory]: 61 MB (+88kb) [00:02:57]
+// [GUI Memory]: 61 MB (+29kb) [00:03:02]
+// [GUI Memory]: 61 MB (+715kb) [00:03:07]
+// [GUI Memory]: 61 MB (+26kb) [00:03:12]
+// [GUI Memory]: 62 MB (+91kb) [00:03:17]
+// [GUI Memory]: 62 MB (+659kb) [00:03:22]
+// [GUI Memory]: 62 MB (+94kb) [00:03:27]
+// [GUI Memory]: 62 MB (+29kb) [00:03:32]
+// [GUI Memory]: 62 MB (+89kb) [00:03:37]
+// [GUI Memory]: 63 MB (+653kb) [00:03:42]
+// [GUI Memory]: 63 MB (+90kb) [00:03:47]
+// [GUI Memory]: 63 MB (+26kb) [00:03:52]
+// [GUI Memory]: 63 MB (+100kb) [00:03:57]
+// [GUI Memory]: 64 MB (+653kb) [00:04:02]
+// [GUI Memory]: 64 MB (+90kb) [00:04:07]
+// [GUI Memory]: 64 MB (+28kb) [00:04:12]
+// [GUI Memory]: 64 MB (+499kb) [00:13:15]
+// [GUI Memory]: 65 MB (+684kb) [00:13:20]
+// [GUI Memory]: 65 MB (+97kb) [00:13:25]
+// [GUI Memory]: 66 MB (+681kb) [00:13:30]
+// [GUI Memory]: 67 MB (+739kb) [00:13:35]
+// [GUI Memory]: 67 MB (+41kb) [00:13:40]
+// [GUI Memory]: 67 MB (+740kb) [00:13:45]
+// [GUI Memory]: 67 MB (+43kb) [00:13:50]
+// [GUI Memory]: 68 MB (+737kb) [00:13:55]
